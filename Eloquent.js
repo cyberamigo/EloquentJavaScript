@@ -32,8 +32,8 @@ function boardF(size) { //function to use for the size of the board
         board += ' '; 
       } else {
         board += '#';
-    }
-    }
-    		board += '\n';
+        }
+      }
+        board += '\n';
   }
 }
