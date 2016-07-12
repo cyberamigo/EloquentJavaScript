@@ -4,15 +4,16 @@ Excercises 1 & 2
 
 When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).*/
 
+//function to make it possible to do the computation with any number
 function countTo(num) {
-for(var i = 0; i <= 100; i++){
-  if(i%3 === 0 && i%5 === 0){
-    console.log('FizzBuzz')
-  } else if (i%3 === 0) {
+for(var i = 0; i <= 100; i++){ //loop through everynumber starting at 1
+  if(i%3 === 0 && i%5 === 0){ //check to see if the number is divisble by both 3 and 5
+    console.log('FizzBuzz') //if it is print out the phrase 'FizzBuzz'
+  } else if (i%3 === 0) { //check if is divisble by only by 3
     console.log('Fizz')
-  } else if (i%5 === 0){
+  } else if (i%5 === 0){ //check if number is divisble only by 5
     console.log('Buzz')
 		} else 
-      console.log(i);
+      console.log(i); //if number is not divisble by anything then print the actual  number the loop is on
 	}
 }
