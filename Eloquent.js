@@ -1,4 +1,4 @@
-Excercises 1 & 2
+//Excercises 1 & 2
 //create a loop that will do the required, this is for practice
 /*Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
 
@@ -16,4 +16,24 @@ for(var i = 0; i <= 100; i++){ //loop through everynumber starting at 1
 		} else 
       console.log(i); //if number is not divisble by anything then print the actual  number the loop is on
 	}
+}
+
+
+//excersice two
+// **ChessBoard**
+
+var board = ""; //create an empty board
+
+
+function boardF(size) { //function to use for the size of the board
+	for(var i = 0; i < size; i++ ){ //first loop responsible for the new line
+    for (var e = 0; i < size; e++){ //second loop responsible for the rows
+      if ((e+i) % 2 == 0){ // check where the chars are at
+        board += ' '; 
+      } else {
+        board += '#';
+    }
+    }
+    		board += '\n';
+  }
 }
