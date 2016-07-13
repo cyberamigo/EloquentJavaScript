@@ -37,3 +37,5 @@ function boardF(size) { //function to use for the size of the board
         board += '\n';
   }
 }
+
+//test
